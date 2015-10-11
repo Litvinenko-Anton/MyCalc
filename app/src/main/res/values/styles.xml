@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="linearLayoutHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:onClick">buttonClick</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/grayColor</item>
+
+
+
+
+</style>
+
+    <style name="button">
+        <item name="android:onClick">buttonClick</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/calc_button_grey</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+
+    <style name="button.orange">
+        <item name="android:background">@drawable/calc_button_orange</item>
+    </style>
+
+
+    <style name="button.red">
+        <item name="android:background">@drawable/calc_button_red</item>
+    </style>
+
+
+    <style name="button.green">
+        <item name="android:background">@drawable/calc_button_green</item>
+    </style>
+
+
+</resources>
