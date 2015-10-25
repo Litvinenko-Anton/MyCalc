@@ -1,8 +1,7 @@
 package app.razvitie.com.mycalc;
 
-import android.app.Notification;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -104,6 +103,12 @@ public class MainActivity extends ActionBarActivity {
                 txtResult.setText("0");  // обнуляет txtResult
                 commands.clear();        // стирает все введенные команды
                 lastAction = ActionType.CLEAR;
+                break;
+            }
+
+            // кнопка  "Выход"
+            case R.id.btnExit: {
+                finish();  // инициализирует выход их приложения
                 break;
             }
 
@@ -234,8 +239,14 @@ public class MainActivity extends ActionBarActivity {
         return Double.parseDouble(null);
     }
 
+//    Выходъ
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
 
+        Toast.makeText(getApplicationContext(), "Выход совершен!", Toast.LENGTH_SHORT).show(); // Выводит Toast сообщение перед выходом
 
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
