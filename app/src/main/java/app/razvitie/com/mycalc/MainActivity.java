@@ -239,7 +239,7 @@ public class MainActivity extends ActionBarActivity {
         return Double.parseDouble(null);
     }
 
-//    Выходъ
+//    Выход
     @Override
     protected void onDestroy() {
         super.onDestroy();
