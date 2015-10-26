@@ -48,6 +48,8 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+
+//  Меню
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -55,6 +57,7 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
+//  Показ Тост-сообщений
     private void showToastMessage (int messageId) {
         Toast toastMessage = Toast.makeText(this, messageId, Toast.LENGTH_LONG);
         toastMessage.setGravity(Gravity.TOP, 0, 100);
